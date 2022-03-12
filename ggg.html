@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="taha.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Playstation_img/logo.png" class="logo" />
+            <nav>
+                <ul id="menu_list">
+                    <li>
+                        <a href="">game controllersa</a>
+                    </li>
+                    <li>
+                        <a href="">vr acessories</a>
+                    </li>
+                    <li>
+                        <a href="">media remotes</a>
+                    </li>
+                    <li>
+                        <a href="">others</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="Playstation_img/menu.png" class="menu-icon" onclick="tooglemenu()" />
+        </div>
+        <div class="row">
+            <div class="col_1">
+                <h2>
+                    ps4<br /> dachloak 4
+                </h2>
+                <h3>wireless for controllers for playstation 4</h3>
+                <br />
+                <p>32$.50</p>
+                <br />
+                <button type="button">
+            buy now<img src="Playstation_img/arrow.png" />
+          </button>
+            </div>
+            <div class="col_2">
+                <img src="Playstation_img/controller.png" class="controller" />
+                <div class="color-box">
+                    <div class="add-btn">
+                        <img src="Playstation_img/add.png" />
+                        <p><small>add to cart</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social_links">
+            <img src="Playstation_img/fb.png" alt="" />
+            <img src="Playstation_img/tw.png" alt="" />
+            <img src="Playstation_img/ig.png" alt="" />
+        </div>
+    </div>
+</body>
+<script>
+    var menu_list = document.getElementById("menu_list");
+    menu_list.style.maxHeight = "0px";
+
+    function tooglemenu() {
+        if (menu_list.style.maxHeight == "0px") {
+            menu_list.style.maxHeight = "130px";
+        } else {
+            menu_list.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</html>
